@@ -141,7 +141,7 @@ function getArchiveData() {
                         }
                         output += '</div>';
                         output += '<div class="card-footer text-right">';
-                        output += '<small>'+  +'</small>';
+                        output += '<small>'+ currentDay + '/' + currentMonth +'</small>';
                         output += '</div>';
                         output += '</div>';
 
