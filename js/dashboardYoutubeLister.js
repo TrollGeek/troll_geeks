@@ -1,5 +1,6 @@
 //var channelName = 'TechGuyWeb';
 var channelId = 'UCGoLw0tC_QAXy0b4KCoxYZw';
+var counter = 0;
 
 $(document).ready(function() {
     $.get(
@@ -23,7 +24,7 @@ $(document).ready(function() {
             "https://www.googleapis.com/youtube/v3/playlistItems", {
                 part: 'snippet',
                 //forUsername: channelName,
-                //maxResults: 3,
+                maxResults: 4,
                 playlistId: pid,
                 key: 'AIzaSyDu67h85hhxehgoFUDPgGtdfVmle4SPEtU'
             },
@@ -35,9 +36,10 @@ $(document).ready(function() {
                     console.log(videoId);
                     console.log(videoTitle);
                     //output = '<div class="col-md-3"> <div class="card shadow"> <img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + videoId + '/mqdefault.jpg"> </img> <div class="card-body"> ' + videoTitle + '</div>  </div> </div>';
-                    output = '<div class="col-md-3"><a href="https://www.youtube.com/watch?v=' + videoId + '" class="card shadow border-0 text-secondary text-center" style="text-decoration: none;"><img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + videoId + '/mqdefault.jpg"> </img> <div class="card-body"> ' + videoTitle + '</div> </a></div>';
-                    $('#results').append(output);
-                })
+                    output = '<div class="col-md-3"><a href="https://www.youtube.com/watch?v=' + videoId + '" class="card shadow border-0 text-secondary text-center" style="text-decoration: none;"><img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + videoId + '/mqdefault.jpg"> <div class="card-body text-center"> ' + videoTitle + '</div> </a></div>';
+                    $('#videos').append(output);
+                });
+                //document.getElementById('webVideo').innerHTML = output;
             }
         );
     }
