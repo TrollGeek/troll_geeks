@@ -23,7 +23,7 @@ $(document).ready(function() {
             "https://www.googleapis.com/youtube/v3/playlistItems", {
                 part: 'snippet',
                 //forUsername: channelName,
-                //maxResults: 3,
+                maxResults: 10000,
                 playlistId: pid,
                 key: 'AIzaSyDu67h85hhxehgoFUDPgGtdfVmle4SPEtU'
             },
