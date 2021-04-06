@@ -9,7 +9,7 @@
             background-color: #fff;
             overflow-x: hidden;
             transition: 0.5s;
-            padding-top: 60px;
+            padding-top: 10px;
         }
 
         .nav-link {
@@ -27,6 +27,10 @@
             color:aliceblue;
             padding-right: 10px;
             cursor: pointer;
+        }
+
+        .open-btn {
+            margin-left: 15px;
         }
 
         .troll-geek-bg {

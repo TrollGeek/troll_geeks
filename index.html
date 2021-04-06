@@ -70,6 +70,7 @@
     </style>
     <body>
         <div id="drawer" class="sidenav troll-geek-bg shadow">
+            <span class="opener" onclick="openDrawer()"><i class="fa fa-bars open-btn" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link ylink" href=""><i class="fa fa-home"></i> &emsp;Home</a>
@@ -189,7 +190,7 @@
         function openDrawer() {
             if (!isDrawerOpen) {
                 _("drawer").style.width = "250px";
-                _("main").style.marginLeft = "250px";
+                _("main").style.marginLeft = "0px";
                 _("main").style.transition = "0.5s";
                 _("opn").style.transition = "0.5s";
                 _("cls").style.transition = "0.5s";

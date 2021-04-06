@@ -9,7 +9,7 @@ var isDrawerOpen = false;
 function openDrawer() {
     if (!isDrawerOpen) {
         _("drawer").style.width = "250px";
-        _("main").style.marginLeft = "250px";
+        _("main").style.marginLeft = "0px";
         _("main").style.transition = "0.5s";
         _("opn").style.transition = "0.5s";
         _("cls").style.transition = "0.5s";
