@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Troll Geeks
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" href ="../images/logo.png" type = "image/x-icon">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyDwJboZxT5qmMm8uMbLohXZNs7r40p7WOg",
+                authDomain: "trollgeeks-f87d2.firebaseapp.com",
+                databaseURL: "https://trollgeeks-f87d2-default-rtdb.firebaseio.com",
+                projectId: "trollgeeks-f87d2",
+                storageBucket: "trollgeeks-f87d2.appspot.com",
+                messagingSenderId: "67306848167",
+                appId: "1:67306848167:web:af7ae0fb0d0f54f88c4082"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            var database = firebase.database(); 
+        </script>
+        <script src="./archiveFetch.js"></script>
+
+        <link rel="stylesheet" href="../css/navigationbar.css">
+        <!--Bootstrap files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../js/navigator.js"></script>
+    </head>
+    <body>
+        <div id="drawer" class="sidenav troll-geek-bg shadow">
+            <span class="opener" onclick="openDrawer()"><i class="fa fa-bars open-btn" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../"><i class="fa fa-home"></i> &emsp;Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../aboutUs/"><i class="fa fa-info"></i> &emsp;About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contests/"><i class="fa fa-trophy"></i> &emsp;Contest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../youtube/"><i class="fa fa-video-camera"></i> &emsp;Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=""><i class="fa fa-archive"></i> &emsp;Archive</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div id="main" class="main">
+            <nav class="navbar navbar-expand-lg navbar-light troll-geek-bg navbar-fixed-top">
+                <span class="opener" onclick="openDrawer()"><i class="fa fa-bars" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
+                <a class="navbar-brand text-light">Archive</a>
+            </nav>
+            <br>    
+            <div class="container">
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">No Data</h5>
+                        </div>
+                        <div class="modal-body">
+                            No Discussion found on this day
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <select class="form-select" id="year" aria-label="Floating label select example" oninput="changeYear()">
+                            
+                            </select>
+                            <label for="year">Year</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <select class="form-select" id="month" aria-label="Floating label select example" oninput="changeMonth()"></select>
+                            
+                            <label for="month">Month</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <select class="form-select" id="day" aria-label="Floating label select example"></select>
+                            
+                            <label for="day">Day</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="height: 50px; margin-top: 10px;">
+                    <div class="spinner-border spinner-border-sm" role="status" id="progress" style="display: none;">
+                        
+                    </div>
+                    <button class="btn btn-sm btn-primary" id="fetcher" onclick="getArchiveData()">Get Data</button>
+                </div>
+                <div class="card shadow">
+                    <div class="spinner-border spinner-border-sm" role="status" id="archiveProgress" style="display: none;">
+                        
+                    </div>
+                    <div class="card-body" id="archiveData">
+                        
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </body>
+    <style>
+
+        .archive {
+            margin-top: 10px;
+        }
+
+        .mcq-card {
+            margin-top: 10px;
+        }
+
+        .bg-green {
+            background: #aaf7bf;
+        }
+
+    </style>
+</html>
