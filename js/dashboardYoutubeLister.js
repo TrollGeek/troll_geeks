@@ -30,16 +30,26 @@ $(document).ready(function() {
             },
             function(data) {
                 var output;
+                var mobileOutput = '';
                 $.each(data.items, function(i, item) {
                     videoTitle = item.snippet.title;
                     videoId = item.snippet.resourceId.videoId;
                     console.log(videoId);
                     console.log(videoTitle);
                     //output = '<div class="col-md-3"> <div class="card shadow"> <img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + videoId + '/mqdefault.jpg"> </img> <div class="card-body"> ' + videoTitle + '</div>  </div> </div>';
-                    output = '<div class="col-md-3"><a href="https://www.youtube.com/watch?v=' + videoId + '" class="card shadow border-0 text-secondary text-center" style="text-decoration: none;"><img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + videoId + '/mqdefault.jpg"> <div class="card-body text-center"> ' + videoTitle + '</div> </a></div>';
+                    output = '<div class="col-md-3"><a href="https://www.youtube.com/watch?v=' + videoId + '" class="card shadow border-0 text-secondary text-center ylink" style="text-decoration: none;"><img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + videoId + '/mqdefault.jpg"> <div class="card-body text-center"> ' + videoTitle + '</div> </a></div>';
+                    if (counter == 0) {
+                        mobileOutput += '<div class="carousel-item active"><a href="https://www.youtube.com/watch?v=' + videoId + '" class="card shadow border-0 text-secondary text-center" style="text-decoration: none;"><img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + videoId + '/mqdefault.jpg"> <div class="card-body text-center"> ' + videoTitle + '</div> </a></div>';
+                    } else {
+                        mobileOutput += '<div class="carousel-item"><a href="https://www.youtube.com/watch?v=' + videoId + '" class="card shadow border-0 text-secondary text-center" style="text-decoration: none;"><img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + videoId + '/mqdefault.jpg"> <div class="card-body text-center"> ' + videoTitle + '</div> </a></div>';
+                    }
+                    console.log(counter);
+                    counter = counter + 1;
+                    console.log("view ; " + mobileOutput);
                     $('#videos').append(output);
+                    //$('#mobileVideo').append(mobileOutput);
                 });
-                //document.getElementById('webVideo').innerHTML = output;
+                document.getElementById('mobileVideo').innerHTML = mobileOutput;
             }
         );
     }
