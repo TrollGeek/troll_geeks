@@ -9,3 +9,8 @@ p {
 .bg-green {
     background: rgb(157, 226, 166);
 }
+
+.lead {
+    font-size: 17px;
+    font-weight: 600;
+}
