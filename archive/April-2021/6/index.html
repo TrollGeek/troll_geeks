@@ -167,6 +167,45 @@ for i in range(a):
                         <small>06-April-2021 @08:11am</small>
                     </div>
                 </div>
+                <br>
+
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <h5>Picking Numbers</h5>
+                    </div>
+                    <div class="card-body">
+
+                        <p class="lead">
+                            Given an array of integers, find and print the maximum number of integers you can select from the array such that the absolute difference between any two of the chosen image is.
+                        </p>
+                    
+                        <h6>
+                            Sample Input 1
+                        </h6>
+                        <label>
+                            6 <br>
+                            1 2 2 3 1 2
+                        </label>
+
+                        <h6>
+                            Output 1
+                        </h6>
+                        <label>
+                            5
+                        </label>
+                        <h6>
+                            Explanation 1
+                        </h6>
+                        <label>
+                            We choose the following multiset of integers from the array {1,2,2,1,2}. Each pair in the multiset has an absolute difference less than or equal 1 (i.e, |1-2|=1, |1-1|=0 and |2-2|=0), so we print the number of chosen integer, 5, as our answer
+                        </label>
+                        
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small>06-April-2021 @09:20am</small>
+                    </div>
+                </div>
+                <br>
 
             </div>
         </div>
@@ -187,6 +226,8 @@ for i in range(a):
 
 
         editor = CodeMirror.fromTextArea(document.getElementById("exampleTextarea"), config);
-        editor.setSize("100%","100%");
+        editor.setSize("100%","100%");/*
+        pickingNumbers = CodeMirror.fromTextArea(document.getElementById("pickingNumbers"), config);
+        pickingNumbers.setSize("100%","100%");*/
     </script>
 </html>
