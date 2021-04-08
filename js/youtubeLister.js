@@ -12,7 +12,7 @@ $(document).ready(function() {
         function(data) {
             $.each(data.items, function(i, item) {
                 var pid = item.contentDetails.relatedPlaylists.uploads;
-
+                
                 getVideos(pid);
             })
         }
@@ -30,6 +30,7 @@ $(document).ready(function() {
             function(data) {
                 var output;
                 $.each(data.items, function(i, item) {
+                    console.log(item);
                     videoTitle = item.snippet.title;
                     videoId = item.snippet.resourceId.videoId;
                     console.log(videoId);
