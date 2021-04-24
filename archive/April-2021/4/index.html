@@ -112,7 +112,26 @@ print(L,M)
                     </div>
                     <div class="card-body">
                         <p class="lead">You are choreographing a circus show with various animals. For one act, you are given two kangaroos on a number line ready to jump in the positive direction (i.e, toward positive infinity). The first kangaroo starts at location and moves at a rate of meters per jump. The second kangaroo starts at location and moves at a rate of meters per jump. You have to figure out a way to get both kangaroos at the same location at the same time as part of the show. If it is possible, return YES, otherwise return NO.</p>
-                        <a href="https://www.hackerrank.com/challenges/kangaroo/problem" class="btn btn-sm btn-success">Try Now</a>
+
+                        <h6>Example</h6>
+                        <label class="fw-normal">
+                            x1=2 <br>
+                            v1=1 <br>
+                            x2=1 <br>
+                            v1=2 <br>
+                            After one jump, they are both at x=3, (x1+v1=2 , x2+v2=1+2 ), so the answer is YES.
+                        </label>
+
+                        <h6>Sample Input 0</h6>
+                        <label>0 3 4 2</label>
+
+                        <h6>Sample Outputnput 0</h6>
+                        <label>YES</label>
+
+                        <br>
+
+                        <a href="https://www.hackerrank.com/challenges/kangaroo/problem" class="btn btn-sm btn-success">Try Now <i class="fa fa-check"></i></a>
+                        
                     </div>
                     <div class="card-footer bg-transparent">
                         <small>04-April-2021 @13:30am</small>
@@ -224,7 +243,17 @@ print(L,M)
                 readOnly: true
             };
 
+            config1 = {            
+                mode: "text/javascript",
+                lineWrapping: true,
+                htmlMode: true,
+                matchClosing: true,       
+                indentWithTabs: true,
+                readOnly: true
+            };
 
+            editor0 = CodeMirror.fromTextArea(document.getElementById("Jumps"), config1);
+            editor0.setSize("100%","100%");
             editor = CodeMirror.fromTextArea(document.getElementById("exampleTextarea"), config);
             editor.setSize("100%","100%");
             editor1 = CodeMirror.fromTextArea(document.getElementById("pattern"), config);
