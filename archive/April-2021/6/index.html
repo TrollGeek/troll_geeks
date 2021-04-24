@@ -23,32 +23,12 @@
         <link rel="stylesheet" href="../../archive.css">
         <script src="../../../codemirror-5.60.0/lib/codemirror.js"></script>
         <link rel="stylesheet" href="../../../codemirror-5.60.0/lib/codemirror.css">
+        <script src="../../../js/back.js"></script>
     </head>
     <body>
-        <div id="drawer" class="sidenav troll-geek-bg shadow">
-            <span class="opener" onclick="openDrawer()"><i class="fa fa-bars open-btn" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../"><i class="fa fa-home"></i> &emsp;Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../aboutUs/"><i class="fa fa-info"></i> &emsp;About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../contests/"><i class="fa fa-trophy"></i> &emsp;Contest</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../youtube/"><i class="fa fa-video-camera"></i> &emsp;Videos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../"><i class="fa fa-archive"></i> &emsp;Archive</a>
-                </li>
-                
-            </ul>
-        </div>
         <div id="main" class="main">
             <nav class="navbar navbar-expand-lg navbar-light troll-geek-bg navbar-fixed-top">
-                <span class="opener" onclick="openDrawer()"><i class="fa fa-bars" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
+                <span class="opener" onclick="goBack()"><i class="fa fa-arrow-left" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
                 <a class="navbar-brand text-light">Archive</a>
             </nav>
             <br>
@@ -179,6 +159,26 @@ for i in range(a):
                             Given an array of integers, find and print the maximum number of integers you can select from the array such that the absolute difference between any two of the chosen image is.
                         </p>
                     
+                        <h6>
+                            Sample Input 0
+                        </h6>
+                        <label>
+                            6 <br>
+                            4 6 5 3 3 1
+                        </label>
+
+                        <h6>
+                            Output 0
+                        </h6>
+                        <label>
+                            3
+                        </label>
+                        <h6>
+                            Explanation 1
+                        </h6>
+                        <label>
+                            We choose the following multiset of integers from the array:{4,3,3} . Each pair in the multiset has an absolute difference less then or equal 1  (i.e|4-3|=1 and |3-3|.,  and ), so we print the number of chosen integers,3 , as our answer.
+                        </label>
                         <h6>
                             Sample Input 1
                         </h6>
