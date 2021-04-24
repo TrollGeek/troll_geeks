@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Troll Geeks
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" href ="../../../images/logo.png" type = "image/x-icon">
+
+        <link rel="stylesheet" href="../../../css/navigationbar.css">
+        <!--Bootstrap files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../../../js/navigator.js"></script>
+        <link rel="stylesheet" href="../../archive.css">
+        <script src="../../../codemirror-5.60.0/lib/codemirror.js"></script>
+        <link rel="stylesheet" href="../../../codemirror-5.60.0/lib/codemirror.css">
+        <script src="../../../js/back.js"></script>
+    </head>
+    <body>
+        <div id="main" class="main">
+            <nav class="navbar navbar-expand-lg navbar-light troll-geek-bg fixed-top">
+                <span class="opener" onclick="goBack()"><i class="fa fa-arrow-left" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
+                <a class="navbar-brand text-light">Archive</a>
+            </nav>
+            <br>
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <h5>Find the Output</h5>
+                    </div>
+                    <div class="card-body">
+                        
+                        <textarea class="form-control" id="exampleTextarea">
+count = 1
+def doThis():
+    global count;
+    for i in (1,2,3):
+        count += 1
+
+doThis()
+print(count)
+                        </textarea>
+                        <div class="card card-top bg-green">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" checked>
+                                    <label class="form-check-label">
+                                        4
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-top">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio">
+                                    <label class="form-check-label">
+                                        None
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-top">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio">
+                                    <label class="form-check-label">
+                                        6
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-top">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio">
+                                    <label class="form-check-label">
+                                        Error
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small>08-April-2021 @06:05am</small>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <h5>CamelCase</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">
+                            There is a sequence of words in CamelCase as a string of letters,s , having the following properties:
+                            <br><br>
+
+                            1.It is a concatenation of one or more words consisting of English letters.
+                            <br><br>
+
+                            2.All letters in the first word are lowercase.
+                            <br><br>
+
+                            3.For each of the subsequent words, the first letter is uppercase and rest of the letters are lowercase.
+                            <br><br>
+
+                            Given s, determine the number of words in s.
+                        </p>
+                        <br>
+                        <h6>Example</h6>
+                        <label >
+                            s = oneTwoThree <br>
+                            There are 3 words in the string 'one', 'Two', 'Three'
+                        </label>
+                        <br>
+                        <h6>
+                            Sample Input
+                        </h6>
+                        <label>
+                            saveChangesInTheEditor
+                        </label>
+                        <br>
+                        <h6>
+                            Sample Output
+                        </h6>
+                        <label>
+                            5
+                        </label>
+                        <br>
+                        <h6>
+                            Explanation
+                        </h6>
+                        <label>
+                            String s contains five words <br>
+                            save <br>
+                            Changes <br>
+                            In <br>
+                            The <br>
+                            Editor
+                        </label>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small>08-April-2021 @09:20am</small>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <h5>Question to Solve</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="lead">
+                            Bear Limak has a string S. Each character of S is a digit '0' or '1'.
+                        </p>
+                        <p class="lead">
+                            Help Limak and check if all the '1' digits form a single non-empty segment (consecutive subsequence) in the string. For each test case, print "YES" or "NO" accordingly.
+                        </p>
+                        <br>
+                        <h6>
+                            Input
+                        </h6>
+                        <label>
+                            Bear Limak has a string S. Each character of S is a digit '0' or '1'. Help Limak and check if all the '1' digits form a single non-empty segment (consecutive subsequence) in the string. For each test case, print "YES" or "NO" accordingly.
+                        </label>
+                        <br>
+                        <h6>
+                            Output
+                        </h6>
+                        <label>
+                            For each test case, output a single line containing the answer — "YES" if all the '1' digits form a single non-empty segment, and "NO" otherwise. Don't print the quotes
+                        </label>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <p class="lead">
+                                    Input
+                                </p>
+                                <label>
+                                    6 <br>
+                                    001111110 <br>
+                                    00110011 <br>
+                                    000 <br>
+                                    1111 <br>
+                                    101010101 <br>
+                                    101111111111
+                                </label>
+                            </div>
+                            <div class="col">
+                                <p class="lead">
+                                    Output
+                                </p>
+                                <label>
+                                    <br>
+                                    YES <br>
+                                    NO <br>
+                                    NO <br>
+                                    YES <br>
+                                    NO <br>
+                                    NO
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small>08-April-2021 @03:42pm</small>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </body>
+    <script>
+        var config, editor;
+
+        config = {                  
+            lineNumbers: true,
+            mode: "text/javascript",
+            lineWrapping: true,
+            htmlMode: true,
+            matchClosing: true,       
+            indentWithTabs: true,
+            readOnly: true
+        };
+
+
+        editor = CodeMirror.fromTextArea(document.getElementById("exampleTextarea"), config);
+        editor.setSize("100%","100%");/*
+        pickingNumbers = CodeMirror.fromTextArea(document.getElementById("pickingNumbers"), config);
+        pickingNumbers.setSize("100%","100%");*/
+    </script>
+</html>
