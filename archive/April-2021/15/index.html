@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Archive - 15/April/2021
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" href ="../../../images/logo.png" type = "image/x-icon">
+
+        <link rel="stylesheet" href="../../../css/navigationbar.css">
+        <!--Bootstrap files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../../../js/navigator.js"></script>
+        <link rel="stylesheet" href="../../archive.css">
+        <script src="../../../codemirror-5.60.0/lib/codemirror.js"></script>
+        <link rel="stylesheet" href="../../../codemirror-5.60.0/lib/codemirror.css">
+        <script src="../../../js/back.js"></script>
+        <script src="../../../js/blocker.js"></script>
+    </head>
+    <body>
+        <div id="main" class="main">
+            <nav class="navbar navbar-expand-lg navbar-light troll-geek-bg fixed-top">
+                <span class="opener" onclick="goBack()"><i class="fa fa-arrow-left" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
+                <a class="navbar-brand text-light">Archive</a>
+            </nav>
+            <br>
+            <div class="container">
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <h5>Making Anagrams</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">
+                            We consider two strings to be anagrams of each other if the first string's letters can be rearranged to form the second string. In other words, both strings must contain the same exact letters in the same exact frequency. For example, bacdc and dcbac are anagrams, but bacdc and dcbad are not.
+                            <br><br>
+                            Alice is taking a cryptography class and finding anagrams to be very useful. She decides on an encryption scheme involving two large strings where encryption is dependent on the minimum number of character deletions required to make the two strings anagrams. Can you help her find this number?
+                            <br><br>
+                            Given two strings, s1 and s2 , that may not be of the same length, determine the minimum number of character deletions required to make s1 and s2 anagrams. Any characters can be deleted from either of the strings.
+                        </p>
+                        <p class="lead">
+                            <h6>Input Format</h6>
+                            two strings s1,s2 <br>
+                            It is guaranteed that s1 and s2 consist of lowercase English letters, ascii[a-z].
+                        </p>
+
+                        <h6>Sample Input</h6>
+                        <label for="">
+                            cde <br>
+                            abc <br>
+                        </label>
+                        <h6>Sample Output</h6>
+                        <label for="">
+                            4
+                        </label>
+
+                        <hr>
+                        <h6>Explaination</h6>
+                        <label for="">
+                            Delete the following characters from our two strings to turn them into anagrams:
+                            <br><br>
+                            1Remove d and e from cde to get c. <br>
+                            2.Remove a and b from abc to get c. <br>
+                            4characters have to be deleted to make both strings anagrams.
+                        </label>
+                        
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small>15-April-2021 @11:43am</small>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Archive - 14/April/2021
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" href ="../images/logo.png" type = "image/x-icon">
+
+        <link rel="stylesheet" href="../css/navigationbar.css">
+        <!--Bootstrap files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../../js/navigator.js"></script>
+        <link rel="stylesheet" href="../archive.css">
+        <script src="../codemirror-5.60.0/lib/codemirror.js"></script>
+        <link rel="stylesheet" href="../codemirror-5.60.0/lib/codemirror.css">
+        <script src="../../js/back.js"></script>
+        <script src="../../js/blocker.js"></script>
+    </head>
+    <body>
+        <div id="main" class="main">
+            <nav class="navbar navbar-expand-lg navbar-light troll-geek-bg fixed-top">
+                <span class="opener" onclick="goBack()"><i class="fa fa-arrow-left" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
+                <a class="navbar-brand text-light">Archive</a>
+            </nav>
+            <br>
+            <div class="container">
+                <div class="card-header bg-transparent text-end">
+                    <button class="btn btn-sm btn-success text-light" onclick="getCode()">Get Code</button>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <textarea class="form-control" id="exampleTextarea">
+#code
+                        </textarea>
+                    </div>
+                    <div class="card-footer bg-transparent" id="code">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var config, editor;
+
+        config = {                  
+            lineNumbers: true,
+            mode: "text/javascript",
+            lineWrapping: true,
+            htmlMode: true,
+            matchClosing: true,       
+            indentWithTabs: true
+        };
+
+
+        editor = CodeMirror.fromTextArea(document.getElementById("exampleTextarea"), config);
+        editor.setSize("100%","100%");
+
+        function getCode() {
+            document.getElementById("code").innerHTML = editor.getValue();
+        }
+    </script>
+</html>
