@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Troll Geeks
+            code io
         </title>
         <link rel = "icon" href ="./images/Round_icon.png" type = "image/x-icon">
         <link rel="stylesheet" href="./css/navigationbar.css">
@@ -41,6 +41,12 @@
         .sans-serif {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        .yt-card {
+            height: 100px;
+            text-align: center;
+        }
+
 
         .ylink {
             transition: 1s;
@@ -100,12 +106,12 @@
                     <a class="navbar-brand text-light"></a>
                 </div>
             </nav>
-            <div class="card first-container shadow-lg mb-5 bg-body rounded" >
+            <div class="card first-container shadow-lg mb-5 bg-body rounded" style="display: none;">
                 <img src="./images/code.io-mini.png" class="img-fluid pc" alt="...">
                 <img src="./images/code.io-2.png" class="img-fluid mobile">
             </div>
             <div class="container" style="margin-top: 15px;">
-                <div class="card cards shadow">
+                <div class="card cards shadow" style="display: none;">
                     <div class="card-header bg-transparent">
                         <h5>Contest</h5>
                     </div>
@@ -149,7 +155,7 @@
                     <div class="col-md-3">
                         <a class="card cards shadow" href="./archive/" style="text-decoration: none;"> 
                             <img src="./images/archive.jpg" class="img-thumnail" alt="">
-                            <div class="card-body text-center connect-card-body">
+                            <div class="card-body yt-card text-center connect-card-body">
                                 <p class="text-secondary">Missed any of our forum discussions? You will find here</p>
                             </div>
                         </a>
@@ -157,16 +163,15 @@
                     <div class="col-md-3">
                         <a class="card cards shadow" href="https://www.instagram.com/troll.geek/" style="text-decoration: none;" target="_blank"> 
                             <img src="./images/insta.jpg" class="img-thumnail" alt="">
-                            <div class="card-body text-center connect-card-body">
+                            <div class="card-body yt-card text-center connect-card-body">
                                 <p class="text-secondary">Send your personal Suggesstions and feedbacks</p>
-                                <label class="text-secondary fw-normal">troll.geek</label>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a class="card cards shadow" href="https://t.me/trollgeek" style="text-decoration: none;" target="_blank"> 
                             <img src="./images/telegram.jpg" class="img-thumnail" alt="">
-                            <div class="card-body text-center connect-card-body">
+                            <div class="card-body yt-card text-center connect-card-body">
                                 <p class="text-secondary">Join our forum to participate in discussions and to clarify doubt with other members</p>
                             </div>
                         </a>
@@ -174,7 +179,7 @@
                     <div class="col-md-3">
                         <a class="card cards shadow" href="mailto: trollgeekyt@gmail.com" style="text-decoration: none;" target="_blank"> 
                             <img src="./images/gmail.jpg" class="img-thumnail border-bottom" alt="">
-                            <div class="card-body text-center connect-card-body">
+                            <div class="card-body yt-card text-center connect-card-body">
                                 <p class="text-secondary">Contact Us</p>
                             </div>
                         </a>
@@ -185,10 +190,7 @@
         <br><br>
         <div class="footer-bg footer">
             <div class="container">
-                <div class="col-3">
-                    <h5>Connect with Us</h5>
-                    
-                </div>
+                
             </div>
             <br><br>
         </div>
