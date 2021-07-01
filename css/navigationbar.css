@@ -22,7 +22,7 @@
         }
 
         .nav-link:hover {
-            background-color: #edc264;
+            background-color: #acdce7;
             color: black;
         }
 
@@ -39,7 +39,7 @@
         }
 
         .troll-geek-bg {
-            background: #ff9912;
+            background: #05bfe8;
         }
 
         @media screen and (max-height: 450px) {
