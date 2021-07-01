@@ -6,8 +6,9 @@
         </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel = "icon" href ="../images/Round_icon.png" type = "image/x-icon">
-        <link rel="stylesheet" href="../css/navigationbar.css">
+        <link rel = "icon" href ="../../images/Round_icon.png" type = "image/x-icon">
+        
+        <link rel="stylesheet" href="../../css/navigationbar.css">
         <!--Bootstrap files-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
@@ -18,72 +19,70 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="../js/jquery.min.js"></script>
-        <script src="../js/navigator.js"></script>
-
+        <script src="../../js/jquery.min.js"></script>
+        <script src="../../js/blocker.js"></script>
+        <script src="../../js/navigator.js"></script>
     </head>
     <body>
         <div id="drawer" class="sidenav troll-geek-bg shadow">
             <span class="opener" onclick="openDrawer()"><i class="fa fa-bars open-btn" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="../"><i class="fa fa-home"></i> &emsp;Home</a>
+                    <a class="nav-link" href="../../"><i class="fa fa-home"></i> &emsp;Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../aboutUs/"><i class="fa fa-info"></i> &emsp;About Us</a>
+                    <a class="nav-link" href="../../aboutUs/"><i class="fa fa-info"></i> &emsp;About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=""><i class="fa fa-trophy"></i> &emsp;Contest</a>
+                    <a class="nav-link" href="../../contests/"><i class="fa fa-trophy"></i> &emsp;Contest</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../youtube/"><i class="fa fa-video-camera"></i> &emsp;Videos</a>
+                    <a class="nav-link" href="../../youtube/"><i class="fa fa-video-camera"></i> &emsp;Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../archive/"><i class="fa fa-archive"></i> &emsp;Archive</a>
+                    <a class="nav-link" href="../../archive/"><i class="fa fa-archive"></i> &emsp;Archive</a>
                 </li>
                 <hr style="margin-left: 10px; margin-right: 10px; height: 2px;">
                 <li class="nav-item">
-                    <a class="nav-link ylink" href="../dailydose/"><i class="fa fa-archive"></i> &emsp;Daily Dose</a>
+                    <a class="nav-link ylink" href="../"><i class="fa fa-archive"></i> &emsp;Daily Dose</a>
                 </li>
-                
             </ul>
         </div>
         <div id="main" class="main">
             <nav class="navbar navbar-expand-lg navbar-light troll-geek-bg fixed-top">
                 <span class="opener" onclick="openDrawer()"><i class="fa fa-bars" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
-                <a class="navbar-brand text-light">Contest</a>
+                <a class="navbar-brand text-light">Transition Point</a>
             </nav>
             <br>
             <div class="container">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="lead text-center fw-normal">
-                            Troll Geeks has planned to organise and conduct Coding contest every month last sunday through hackerrank medium. The contest start by 12:00 am and closes by 11:50 pm of tha same day. The results for the contests will be announced by very next sunday. The result is not only based on the position in leaderboard, its based on the innovation in code. The unique code that we find will be displayed in the website along with the attendee name.
-                        </p>
+                <br>
+                <div class="card shadow">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rruz25UX46o?autoplay=1" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="row" style="display: none;">
-                    <div class="col-md-3">
-                        <a class="card shadow" href="./April-2021-15/Kangaroo Problem/" style="text-decoration: none;"> 
-                            <img src="../images/hackerrank.png" class="img-thumnail" alt="">
-                            <div class="card-body text-center">
-                                <h5 class="text-secondary">April Contest</h5>
-                                <hr>
-                                <p class="text-secondary">Arrays, Strings</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <br>
+                
             </div>
         </div>
+        <br><br>
     </body>
     <style>
+        .card {
+            margin-top: 10px;
+        }
+
+        .yt-card {
+            height: 100px;
+        }
 
         a {
+            text-decoration: none;
             transition: 1s;
         }
 
         a:hover {
+            text-decoration: none;
             transform: scale(1.04);
         }
 
