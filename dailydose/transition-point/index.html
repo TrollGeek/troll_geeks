@@ -60,6 +60,10 @@
                 <br>
                 <h4>Transition Point</h4>
                 <hr>
+                <div>
+                    <strong>Company Tags : </strong>
+                    <span class="tag_box shadow">Amazon</span>
+                </div>
                 <div class="card shadow">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rruz25UX46o?autoplay=1" allowfullscreen></iframe>
@@ -79,13 +83,15 @@ for i in range(a):
                 
             </div>
         </div>
-        <br><br>
+        <br>
         <div class="container">
+            <hr>
             <div class="row">
-                <a class="col text-center">
-                    <i class="fa fa-angle-left fa-3x" style="display: none;"></i>
+                <a class="col text-start text-secondary">
+                    <!--<i class="fa fa-angle-left fa-2x"></i>
+                    <label class="font-size">Reverse Words</label> &emsp; -->
                 </a>
-                <a class="col text-center">
+                <a class="col text-end text-secondary">
                     <label class="font-size">Reverse Words</label> &emsp;
                     <i class="fa fa-angle-right fa-2x"></i>
                 </a>
@@ -103,6 +109,18 @@ for i in range(a):
             font-weight: bold;
         }
 
+        .tag_box {
+            width: auto;
+            height: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #9565DD;
+            color: #fff;
+            border-radius: 5px;
+        }
+
         .yt-card {
             height: 100px;
         }
@@ -115,6 +133,12 @@ for i in range(a):
         a:hover {
             text-decoration: none;
             transform: scale(1.04);
+        }
+
+        @media screen and (max-height: 450px) {
+            .font-size {
+                font-size: 15px;
+            }
         }
 
     </style>
