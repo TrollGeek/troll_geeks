@@ -75,16 +75,16 @@
         var url_string = window.location.href;
         var url = new URL(url_string);
         var c = url.searchParams.get("c");
-
+        console.log(c);
         $.ajax({
-            url : "../../json/"+ c +".json",
-            method:"POST",
+            url : "https://raw.githubusercontent.com/TrollGeek/troll_geeks/main/json/" + c + ".json",
+            method:"GET",
             success:function(data) {
-                var cdata = data;
-                var length = cdata.data.length;
+                var cdata = JSON.parse(data);
+                var len = cdata.data.length;
 
                 var lister = '';
-                for (var i = 0; i < length; i++) {
+                for (var i = 0; i < len; i++) {
                     lister += '<div class="col-3"><a class="card shadow" href='+ cdata.data[i].url +'><img width="100%" class="img-thumbnail" height="auto" src="https://i1.ytimg.com/vi/' + cdata.data[i].id + '/mqdefault.jpg"> </img> <div class="card-body text-center text-secondary">' + cdata.data[i].name + '</div> </a></div>';
                 }
                 _("playlist").innerHTML = lister;
