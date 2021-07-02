@@ -4,6 +4,11 @@
             "name" : "Reverse Words",
             "url" : "../../dailydose/reverse-words",
             "id" : "glGZMqcSDW0"
+        },
+        {
+            "name" : "Check String Rotation",
+            "url" : "../../check-string-rotation",
+            "id" : "1mn4lNeS8PY"
         }
     ]
 }
