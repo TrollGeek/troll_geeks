@@ -56,7 +56,7 @@
         <div id="main" class="main">
             <nav class="navbar navbar-expand-lg navbar-light troll-geek-bg fixed-top">
                 <span class="opener" onclick="openDrawer()"><i class="fa fa-bars" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
-                <a class="navbar-brand text-light">Daily Dose</a>
+                <a class="navbar-brand text-light" id="ctitle">Daily Dose</a>
             </nav>
             <div class="container">
                 <br>
@@ -76,6 +76,7 @@
         var url = new URL(url_string);
         var c = url.searchParams.get("c");
         console.log(c);
+        _("ctitle").innerHTML = c.charAt(0).toUpperCase() + c.slice(1);
         $.ajax({
             url : "https://raw.githubusercontent.com/TrollGeek/troll_geeks/main/json/" + c + ".json",
             method:"GET",
