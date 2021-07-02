@@ -49,6 +49,11 @@
             "name" : "Check String Rotation",
             "url" : "../../check-string-rotation",
             "id" : "1mn4lNeS8PY"
+        },
+        {
+            "name" : "Implement strstr",
+            "url" : "../../dailydose/implement-strstr",
+            "id" : "s-F-GtDneow"
         }
     ]
 }
