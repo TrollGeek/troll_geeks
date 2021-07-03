@@ -9,6 +9,11 @@
             "name" : "Counting Sort - Strings",
             "url" : "../../dailydose/counting-sort-strings",
             "id" : "eHdJoE_UTTw"
+        },
+        {
+            "name" : "getMin() - Stack O(1)",
+            "url" : "../../dailydose/getmin-stack-order-1",
+            "id" : "Yd6jEMJSQ8M"
         }
     ]
 }

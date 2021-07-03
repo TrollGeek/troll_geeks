@@ -4,6 +4,11 @@
             "name" : "Key Pair",
             "url" : "../../dailydose/key-pair",
             "id" : "ztoIlS1_gl4"
+        },
+        {
+            "name" : "getMin() - Stack O(1)",
+            "url" : "../../dailydose/getmin-stack-order-1",
+            "id" : "Yd6jEMJSQ8M"
         }
     ]
 }
