@@ -64,6 +64,11 @@
             "name" : "getMin() - Stack O(1)",
             "url" : "../../dailydose/getmin-stack-order-1",
             "id" : "Yd6jEMJSQ8M"
+        },
+        {
+            "name" : "Remove Character",
+            "url" : "../../dailydose/remove-character",
+            "id" : "q40wj-I2WI8"
         }
     ]
 }
