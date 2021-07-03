@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Code io
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" href ="../images/Round_icon.png" type = "image/x-icon">
+        
+        <link rel="stylesheet" href="../css/navigationbar.css">
+        <!--Bootstrap files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/blocker.js"></script>
+        <script src="../js/navigator.js"></script>
+    </head>
+    <body>
+        <div id="drawer" class="sidenav troll-geek-bg shadow">
+            <span class="opener" onclick="openDrawer()"><i class="fa fa-bars open-btn" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../"><i class="fa fa-home"></i> &emsp;Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../aboutUs/"><i class="fa fa-info"></i> &emsp;About Us</a>
+                </li>
+                <li class="nav-item" style="display: none;">
+                    <a class="nav-link" href="../contests/"><i class="fa fa-trophy"></i> &emsp;Contest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../youtube/"><i class="fa fa-video-camera"></i> &emsp;Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../archive/"><i class="fa fa-archive"></i> &emsp;Archive</a>
+                </li>
+                <hr style="margin-left: 10px; margin-right: 10px; height: 2px;">
+                <li class="nav-item">
+                    <a class="nav-link ylink" href="../dailydose/"><i class="fa fa-archive"></i> &emsp;Daily Dose</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ylink" href="../company/"><i class="fa fa-archive"></i> &emsp;Interview Preparation</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main" class="main">
+            <nav class="navbar navbar-expand-lg navbar-light troll-geek-bg fixed-top">
+                <span class="opener" onclick="openDrawer()"><i class="fa fa-bars" id="opn"></i><i class="fa fa-bars fa-rotate-90" id="cls" style="display: none;"></i></span>
+                <a class="navbar-brand text-light">Interview Preparation</a>
+            </nav>
+            <br>
+            <div class="container">
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="card shadow" href="./problems/?c=accolite">
+                            <img width="100%" class="img-thumbnail border-0" height="auto" src="../images/mnc/accolite.jpg"> </img>
+                            <div class="card-body yt-card text-center text-dark">
+                                Accolite
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a class="card shadow" href="./problems/?c=adobe">
+                            <img width="100%" class="img-thumbnail border-0" height="auto" src="../images/mnc/Adobe_logo.png"> </img>
+                            <div class="card-body yt-card text-center text-dark">
+                                Adobe
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a class="card shadow" href="./problems/?c=amazon">
+                            <img width="100%" class="img-thumbnail border-0" height="auto" src="../images/mnc/amazon.jpg"> </img>
+                            <div class="card-body yt-card text-center text-dark">
+                                Amazon
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </body>
+    <style>
+        .card {
+            margin-top: 10px;
+        }
+
+        .yt-card {
+            min-height: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            transition: 1s;
+        }
+
+        a:hover {
+            text-decoration: none;
+            transform: scale(1.04);
+        }
+        
+
+    </style>
+</html>
