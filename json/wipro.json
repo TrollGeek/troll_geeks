@@ -2,12 +2,12 @@
     "data" : [
         {
             "name" : "Key Pair",
-            "url" : "../../key-pair",
+            "url" : "../../dailydose/key-pair",
             "id" : "ztoIlS1_gl4"
         },
         {
             "name" : "Front-Back Transformation",
-            "url" : "../../front-back-transformation",
+            "url" : "../../dailydose/front-back-transformation",
             "id" : "JeTcW73GPmY"
         }
     ]
